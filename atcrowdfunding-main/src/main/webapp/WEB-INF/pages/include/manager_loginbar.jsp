@@ -31,9 +31,11 @@
                 </button>
             </mySecurityTags:authorize>
 
-            <button type="button" class="btn btn-default btn-danger">
-                <span class="glyphicon glyphicon-question-sign"></span> 帮助
-            </button>
+            <mySecurityTags:authorize access="hasAnyRole('谏官')">
+                <button type="button" class="btn btn-default btn-danger">
+                    <span class="glyphicon glyphicon-question-sign"></span> 谏官角色的帮助
+                </button>
+            </mySecurityTags:authorize>
 
         </li>
     </ul>
